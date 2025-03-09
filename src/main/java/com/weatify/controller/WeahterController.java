@@ -16,4 +16,10 @@ public class WeahterController {
     public String getCurrentWeather() {
         return "현재 날씨 : 맑음 ";
     }
+
+    @GetMapping("/choice")
+    @Operation(summary = "선택한 위치 조회", description = "선택한 위치에 해당하는 정보")
+    public String getChoiceWeather() {
+        return "선택한 날씨 : 맑음";
+    }
 }
